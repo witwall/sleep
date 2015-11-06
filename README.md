@@ -25,10 +25,10 @@ If more than one NUMBER is specified, sleep delays for the sum of their values.
 
 **Options**
 
-
-|--help|Display a help message, and exit.|
-|---|---|
-|--version|Display version information, and exit.|
+Option|Description
+---|---
+--help|Display a help message, and exit.
+--version|Display version information, and exit.
 
 **Examples**
 
