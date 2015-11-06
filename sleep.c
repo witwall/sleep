@@ -12,10 +12,10 @@ int main(int argc, CHAR* argv[])
    
     long enteredParameter = strtol(argv[1], NULL, 10);
     
-    // The user enters seconds, so we need to convert that into milliseconds.
-    long milliseconds = enteredParameter * 1000;
     
-    printf("Sleeping for %d seconds.\n", enteredParameter);
+    long milliseconds = enteredParameter //* 1000;
+    
+    printf("Sleeping for %d milliseconds.\n", enteredParameter);
     
     Sleep(milliseconds);
 
@@ -25,13 +25,13 @@ int main(int argc, CHAR* argv[])
 void printUsageMessage()
 {
     printf("\nsleep for Windows.\n");
-    printf("Waits a certain amount of seconds before returning.\n");
+    printf("Waits a certain amount of milliseconds before returning.\n");
     printf("---------------------------------------------------\n\n");
-    printf("Usage: sleep AmountOfSeconds\n");
-    printf("where AmountOfSeconds is the number of seconds\n");
+    printf("Usage: sleep AmountOfMilliseconds\n");
+    printf("where AmountOfMilliseconds is the number of milliseconds\n");
     printf("to wait before returning.\n\n");
     printf("Example:\n");
     printf("\tsleep 300\n");
-    printf("\tThis will wait 300 seconds (5 minutes) before\n");
+    printf("\tThis will wait 300 milliseconds (0.5 second) before\n");
     printf("\treturning.\n\n");
 }
